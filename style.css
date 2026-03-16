@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    text-align: center;
+    background-color: green;
+}
+.container
+{
+    background-color: blue;
+    text-align: center;
+    height: 70vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game
+{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 100px;
+    width: 100px;
+}
+#resetbtn
+{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
