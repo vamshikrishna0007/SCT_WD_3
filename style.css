@@ -1,40 +1,74 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-body
-{
-    text-align: center;
-    background-color: green;
-}
-.container
-{
-    background-color: blue;
-    text-align: center;
-    height: 70vmin;
+
+body{
+    height: 100vh;
+    background-color: navy;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
-.game
-{
-    height: 400px;
-    width: 400px;
+
+h1{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 360px;
+    width: 360px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-.box{
-    height: 100px;
-    width: 100px;
-}
-#resetbtn
-{
-    padding: 10px;
+    gap: 10px;
     background-color: black;
-    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.box{
+    height: 106px;
+    width: 106px;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 45px;
+    font-weight: bold;
+    color: crimson;
     cursor: pointer;
-    
+    transition: 0.3s;
+}
+
+.box:hover{
+    background-color: lightgray;
+    transform: scale(1.05);
+}
+
+#resetbtn{
+    padding: 12px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#resetbtn:hover{
+    background-color: yellow;
+    transform: scale(1.05);
 }
